@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DeviseApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/shim' %>
+  </head>
+
+  <body>
+  <%= render 'layouts/header' %>
+  
+    <div class="container">
+     <p class="success"><%= notice %></p>
+     <p class="danger"><%= alert %></p>
+
+    <%= yield %>
+    </div>
+
+  <%= render 'layouts/footer' %>
+  </body>
+</html>
